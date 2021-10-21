@@ -65,6 +65,12 @@ struct in6_addr if_ip6_addr;
 
 extern options_t options;
 
+sorted_list_type screen_list;
+host_pair_line totals;
+int peaksent, peakrecv, peaktotal;
+hash_type* screen_hash;
+hash_type* service_hash;
+
 hash_type* history;
 history_type history_totals;
 time_t last_timestamp;
